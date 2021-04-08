@@ -40,8 +40,7 @@ function dd()
 {
     $args = func_get_args();
 
-
-    // http_response_code(500);
+	header('Content-Type: text/html; charset=UTF-8');
 
     foreach ($args as $x) {
         (new Dumper)->dump($x);
